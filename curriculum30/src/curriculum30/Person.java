@@ -26,7 +26,8 @@ public class Person {
 		System.out.println("「名前は" + name + "です」");
 		System.out.println("「年は" + age + "です」");
 		double bmi = weight / (height * height); //bmi計算式
-		System.out.printf("「BMIは %.1f です。」\n", bmi);
+		double roundedBmi = Math.floor(bmi); //小数点以下切り捨て
+		System.out.printf("「BMIは%.1f です。」\n", roundedBmi);
 	}
 
 	public static void printTotal() { //合計人数を出力
